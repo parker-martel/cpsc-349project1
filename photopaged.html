@@ -12,7 +12,7 @@ pagination:
     ....    
 -->
 
-<h1>{{ title }}</h1>
+<center><h1>{{ title }}</h1>
 <ul>
     <!-- &nbsp means non-breaking space, it is a referenced standard space-->
     {% for photo in pagination.items -%}
@@ -23,3 +23,4 @@ pagination:
     <img src="{{ photo.src.large }}" title="{{ photo.alt }}" alt="{{ photo.alt }}">
     {% endfor -%}
 </ul>
+</center>
